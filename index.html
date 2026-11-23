@@ -78,6 +78,13 @@ form.mock button{font:600 .95rem var(--sans);background:var(--green);color:#fff;
 .diagram{overflow-x:auto;border:1px solid var(--line);border-radius:8px;padding:.5rem;background:#fff;margin:.6rem 0 1rem}
 .diagram svg{display:block;min-width:560px;width:100%;height:auto}
 .diagram text{font-family:var(--sans)}
+.bols{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1rem;margin:.8rem 0 1rem}
+.bol{display:flex;flex-direction:column;gap:.35rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-top:4px solid var(--green);border-radius:8px;padding:.7rem;background:#fff;min-width:0}
+.bol:hover,.bol:focus-visible{border-color:var(--green);outline:none;box-shadow:0 2px 10px rgba(0,127,110,.18)}
+.bol img{width:100%;height:auto;aspect-ratio:200/259;object-fit:cover;object-position:top;border:1px solid var(--line);border-radius:4px;background:var(--tint)}
+.bol .k{font:700 .68rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--green-m)}
+.bol .t{font:700 .98rem/1.25 var(--serif)}
+.bol .go{font-size:.82rem;font-weight:600;color:var(--green-d);margin-top:auto}
 .note{font-size:.82rem;color:var(--muted)}
 footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
 </style>
@@ -241,11 +248,20 @@ footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-
 
   <article class="panel" id="comunicaciones-boletines">
     <h3>Boletines</h3>
-    <p>Resumen periódico de las investigaciones en curso y de lo ya consolidado.</p>
-    <div class="cards">
-      <div class="card"><div class="k">Boletín</div><h4 class="fill">[Mes / año]</h4><p>Tema central en una línea. Descargar.</p></div>
-      <div class="card"><div class="k">Boletín</div><h4 class="fill">[Mes / año]</h4><p>Tema central en una línea. Descargar.</p></div>
-      <div class="card"><div class="k">Boletín</div><h4 class="fill">[Mes / año]</h4><p>Tema central en una línea. Descargar.</p></div>
+    <p>Resumen periódico de las investigaciones en curso y de lo ya consolidado. Doce ediciones, de junio de 2019 a febrero de 2023.</p>
+    <div class="bols">
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin12.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin12.jpg" alt="Portada del boletín 12" loading="lazy" width="200" height="259"><span class="k">Edición 12 · Febrero 2023</span><span class="t">Remodelación de la sede de Lima con el Sistema de los Paramitas</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin11.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin11.jpg" alt="Portada del boletín 11" loading="lazy" width="200" height="259"><span class="k">Edición 11 · Octubre 2022</span><span class="t">Los Kumbha Mela en América</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin10.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin10.jpg" alt="Portada del boletín 10" loading="lazy" width="200" height="259"><span class="k">Edición 10 · Junio 2022</span><span class="t">La participación de Invesciencias en los Kumbha Mela</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin09.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin09.jpg" alt="Portada del boletín 9" loading="lazy" width="200" height="259"><span class="k">Edición 9 · Febrero 2022</span><span class="t">Financiamiento y sostenimiento económico de Invesciencias</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin08.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin08.jpg" alt="Portada del boletín 8" loading="lazy" width="200" height="259"><span class="k">Edición 8 · Octubre 2021</span><span class="t">Foro «Naturaleza, Vida y Futuro»</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin07.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin07.jpg" alt="Portada del boletín 7" loading="lazy" width="200" height="259"><span class="k">Edición 7 · Junio 2021</span><span class="t">¿Quién está pagando a los músicos? La industria científica</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin06.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin06.jpg" alt="Portada del boletín 6" loading="lazy" width="200" height="259"><span class="k">Edición 6 · Febrero 2021</span><span class="t">La fotografía científica: de la estética del sentimiento a la de la percepción</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin05.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin05.jpg" alt="Portada del boletín 5" loading="lazy" width="200" height="259"><span class="k">Edición 5 · Octubre 2020</span><span class="t">El centro de la respiración es el centro de la voluntad</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin04.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin04.jpg" alt="Portada del boletín 4" loading="lazy" width="200" height="259"><span class="k">Edición 4 · Junio 2020</span><span class="t">La revista «Hipótesis y Síntesis»</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin03.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin03.jpg" alt="Portada del boletín 3" loading="lazy" width="200" height="259"><span class="k">Edición 3 · Febrero 2020</span><span class="t">Convocatoria a colaborar en dos investigaciones</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin02.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin02.jpg" alt="Portada del boletín 2" loading="lazy" width="200" height="259"><span class="k">Edición 2 · Octubre 2019</span><span class="t">Avances en las líneas de investigación</span><span class="go">Leer el PDF</span></a>
+      <a class="bol" href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin01.pdf" target="_blank" rel="noopener"><img src="boletines/portadas/boletin01.jpg" alt="Portada del boletín 1" loading="lazy" width="200" height="259"><span class="k">Edición 1 · Junio 2019</span><span class="t">Líneas de investigación</span><span class="go">Leer el PDF</span></a>
     </div>
   </article>
 
