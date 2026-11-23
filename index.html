@@ -90,6 +90,10 @@ form.mock button{font:600 .95rem var(--sans);background:var(--green);color:#fff;
 .ficha dt{font:700 .68rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--green-m);padding-top:.15rem}
 .ficha dd{margin:0;min-width:0;overflow-wrap:anywhere}
 a.btn.alt{background:#fff;color:var(--green-d);border:1.5px solid var(--green);margin-left:.3rem}
+.card.lk{display:block;text-decoration:none;color:var(--ink)}
+.card.lk:hover,.card.lk:focus-visible{border-color:var(--green);outline:none;box-shadow:0 2px 10px rgba(0,127,110,.18)}
+.card .go{font-size:.82rem;font-weight:600;color:var(--green-d)}
+h4.sub{font-size:1.1rem;margin:.4rem 0 .2rem}
 .note{font-size:.82rem;color:var(--muted)}
 footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
 </style>
@@ -345,11 +349,28 @@ footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-
   <article class="panel" id="proyectos-laboratorio">
     <h3>Laboratorio</h3>
     <div class="cols"><div>
-      <p>El laboratorio de investigación cosmobiológica permite poner tus datos a prueba en tres pasos: ver si podrían mostrar un efecto, resistir las trampas estadísticas y comprobar si otro grupo lo repite.</p>
-      <p>Para usarlo hay cursos cortos. <span class="fill">[Cómo inscribirse]</span></p>
-      <a class="btn" href="https://invesciencias.github.io/Cosmobiologia/" target="_blank" rel="noopener">Abrir el laboratorio</a>
+      <p>El Laboratorio de las tres compuertas ayuda a saber cuándo se puede creer un resultado entre eventos y ciclos astronómicos. Funciona en tu navegador: tus datos no salen de tu equipo.</p>
+      <p>Antes de preguntar si hay un efecto, pregunta si tus datos podían verlo. La herramienta no afirma que el efecto exista; solo muestra hasta dónde puede interpretarse un resultado.</p>
+      <p><a class="btn" href="https://invesciencias.github.io/Cosmobiologia/laboratorio/index.html" target="_blank" rel="noopener">Abrir el laboratorio</a></p>
     </div>
-    <div class="imgslot"><b>Imagen sugerida</b>Captura del laboratorio.</div></div>
+    <dl class="ficha">
+      <dt>Tema del curso</dt><dd>¿Cuándo puedo creerle a un resultado sobre eventos y ciclos astronómicos?</dd>
+      <dt>Ejemplos</dt><dd>3 casos reales ya cargados</dd>
+      <dt>Tus datos</dt><dd>Se calculan en tu navegador</dd>
+      <dt>Licencia</dt><dd>CC BY 4.0 · MIT</dd>
+    </dl></div>
+    <div class="cards">
+      <div class="card"><div class="k">Compuerta 1</div><h4>¿Podías verlo?</h4><p>¿Tus datos tenían fuerza para mostrar un efecto?</p></div>
+      <div class="card"><div class="k">Compuerta 2</div><h4>¿Se sostiene?</h4><p>Fechas control, cielos desplazados y corrección por comparaciones múltiples.</p></div>
+      <div class="card"><div class="k">Compuerta 3</div><h4>¿Se repite?</h4><p>Replicación en datos distintos a los que se usaron para encontrarlo.</p></div>
+    </div>
+    <h4 class="sub">Para usarlo en un curso</h4>
+    <div class="cards">
+      <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/laboratorio/index.html" target="_blank" rel="noopener"><div class="k">Aprender</div><h4>Ejemplos guiados</h4><p>Marea y sismos, marea y huracanes, y estacionalidad de los ciclones. Mueves controles y ves qué cambia.</p><span class="go">Abrir ejemplos</span></a>
+      <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/evaluacion.html" target="_blank" rel="noopener"><div class="k">Evaluar</div><h4>Cuestionario del curso</h4><p>Ocho preguntas, al empezar y al terminar, con un código sin nombre real. Mide cuánto se aprendió.</p><span class="go">Abrir cuestionario</span></a>
+      <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/laboratorio/panel.html" target="_blank" rel="noopener"><div class="k">Coordinar</div><h4>Panel del curso</h4><p>Registros públicos: en qué compuerta va cada investigación y a quién ayudar.</p><span class="go">Abrir panel</span></a>
+    </div>
+    <p class="note">Cómo tomar el curso: <span class="fill">[fechas, coordinación y cómo inscribirse]</span></p>
   </article>
 
   <article class="panel" id="proyectos-foros">
@@ -383,11 +404,16 @@ footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-
   <article class="panel" id="proyectos-cosmobiologia">
     <h3>Líneas · Cosmobiología</h3>
     <div class="cols"><div>
-      <p>La Cosmobiología estudia si hay relación entre eventos y ciclos astronómicos. Lo hace con método estadístico abierto y publica también los resultados nulos.</p>
-      <p>Ya existe una plataforma para aprender el método, explorar datos y verificar hipótesis.</p>
-      <a class="btn" href="https://invesciencias.github.io/Cosmobiologia/" target="_blank" rel="noopener">Ver la plataforma</a>
+      <p>La Cosmobiología estudia si hay relación entre eventos y ciclos astronómicos. Lo hace con método estadístico abierto, y los resultados nulos se publican igual que los demás.</p>
+      <p>La plataforma reúne más de 20.000 eventos reales de fuentes abiertas, como sismos, huracanes y tormentas solares, con un modelo nulo al lado para comparar.</p>
+      <p><a class="btn" href="https://invesciencias.github.io/Cosmobiologia/" target="_blank" rel="noopener">Ver la plataforma</a> <a class="btn alt" href="https://github.com/Invesciencias/Cosmobiologia" target="_blank" rel="noopener">Código en GitHub</a></p>
     </div>
-    <div class="imgslot"><b>Imagen sugerida</b>Cielo o carta astronómica, libre de derechos.</div></div>
+    <div class="imgslot"><b>Imagen sugerida</b>Captura del mapa 3D o del tablero de datos.</div></div>
+    <div class="cards">
+      <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/explorador.html#ayuda" target="_blank" rel="noopener"><div class="k">Aprender</div><h4>Entiende el método</h4><p>Principios de la teoría y la estadística que los pone a prueba, con glosario y ejemplos.</p><span class="go">Empezar</span></a>
+      <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/explorador.html#tablero" target="_blank" rel="noopener"><div class="k">Explorar datos</div><h4>Mira qué dicen los datos</h4><p>Tablero y mapa de eventos, con mapa 3D guiado y casos con resultado.</p><span class="go">Explorar</span></a>
+      <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/laboratorio/index.html" target="_blank" rel="noopener"><div class="k">Verificar</div><h4>Pruébala en tres compuertas</h4><p>Carga tus datos y registra tu hipótesis de forma pública.</p><span class="go">Abrir el laboratorio</span></a>
+    </div>
   </article>
 
   <article class="panel" id="proyectos-vegetarianismo">
