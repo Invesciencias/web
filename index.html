@@ -85,6 +85,11 @@ form.mock button{font:600 .95rem var(--sans);background:var(--green);color:#fff;
 .bol .k{font:700 .68rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--green-m)}
 .bol .t{font:700 .98rem/1.25 var(--serif)}
 .bol .go{font-size:.82rem;font-weight:600;color:var(--green-d);margin-top:auto}
+.evt{font-size:1.7rem;margin:.1rem 0 .6rem;color:var(--green-d)}
+.ficha{margin:0;border:1px solid var(--line);border-top:4px solid var(--green);border-radius:8px;padding:.9rem 1rem;background:var(--tint);display:grid;grid-template-columns:auto 1fr;gap:.45rem .9rem;font-size:.9rem}
+.ficha dt{font:700 .68rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--green-m);padding-top:.15rem}
+.ficha dd{margin:0;min-width:0;overflow-wrap:anywhere}
+a.btn.alt{background:#fff;color:var(--green-d);border:1.5px solid var(--green);margin-left:.3rem}
 .note{font-size:.82rem;color:var(--muted)}
 footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
 </style>
@@ -233,13 +238,32 @@ footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-
 
   <article class="panel" id="comunicaciones-eventos">
     <h3>Eventos</h3>
-    <p>Encuentros alrededor de tres ejes.</p>
-    <div class="cards">
-      <div class="card"><div class="k">Eje</div><h4>Naturaleza</h4><p><span class="fill">[Próximo evento: fecha, lugar, enlace]</span></p></div>
-      <div class="card"><div class="k">Eje</div><h4>Vida</h4><p><span class="fill">[Próximo evento: fecha, lugar, enlace]</span></p></div>
-      <div class="card"><div class="k">Eje</div><h4>Futuro</h4><p><span class="fill">[Próximo evento: fecha, lugar, enlace]</span></p></div>
+    <div class="cols"><div>
+      <div class="eyebrow">Evento insignia</div>
+      <h4 class="evt">Naturaleza, Vida y Futuro</h4>
+      <p>Ciclo de Conferencias y Foro en homenaje al Dr. Serge Raynaud de la Ferrière. Desde 1987 reúne a investigadores, docentes, jóvenes y comunidades en torno al cuidado de la naturaleza. Se ha realizado en Caracas, Ciudad de Panamá, Mendoza y ahora en Colombia.</p>
+      <p>La edición 2026 celebra los 50 años de la Fundación Invesciencias y propone regenerar la vida y habitar el futuro con ciencia, cultura y comunidad.</p>
+      <p>
+        <a class="btn" href="https://naturalezavidayfuturo.org/" target="_blank" rel="noopener">Sitio del evento</a>
+        <a class="btn alt" href="https://naturalezavidayfuturo.org/docpdf/NATURALEZA-VIDA-Y-FUTURO-JARDIN-CONVOCATORIA-INVESCIENCIAS.pdf" target="_blank" rel="noopener">Convocatoria 2026 (PDF)</a>
+      </p>
     </div>
-    <div class="imgslot"><b>Imagen sugerida</b>Foto de un encuentro anterior.</div>
+    <div>
+      <dl class="ficha">
+        <dt>Edición</dt><dd>2026 · 50 aniversario</dd>
+        <dt>Fecha</dt><dd>20 al 24 de mayo de 2026</dd>
+        <dt>Lugar</dt><dd>Jardín, Antioquia, Colombia</dd>
+        <dt>Tema central</dt><dd>Cultura regenerativa y biodiversidad</dd>
+        <dt>Contacto</dt><dd>nvf.invesciencias@gmail.com<br>WhatsApp +57 301 338 5046<br>@natu.vida.futuro</dd>
+      </dl>
+    </div></div>
+    <div class="cards">
+      <div class="card"><div class="k">Eje A</div><h4>Cultura regenerativa</h4><p>Corredores bioculturales, regeneración de bosques, suelos y aguas, alimentación regenerativa, economías solidarias, inteligencia artificial para la conservación, educación para la paz y bioconstrucción.</p></div>
+      <div class="card"><div class="k">Eje B</div><h4>Biodiversidad y territorio</h4><p>El agua como savia del territorio, ecosistemas de la cuenca del San Juan, flora y fauna endémica, aves migratorias, adaptación climática y ciencia ciudadana.</p></div>
+      <div class="card"><div class="k">Dirigido a</div><h4>Quién puede participar</h4><p>Instituciones educativas, docentes y estudiantes, organizaciones ambientales, entidades de gobierno, instituciones científicas y culturales, investigadores, artistas, emprendedores y colectivos juveniles.</p></div>
+    </div>
+    <p class="note">Su origen está contado en el <a href="https://invesciencias.github.io/web/boletines/Invesciencias_Boletin08.pdf" target="_blank" rel="noopener">boletín 8</a>. Pendiente para los redactores: <span class="fill">[próxima edición]</span> y <span class="fill">[memorias o resultados de 2026]</span>.</p>
+    <div class="imgslot"><b>Imagen sugerida</b>Afiche o foto del encuentro, con permiso del evento.</div>
   </article>
 
   <article class="panel" id="comunicaciones-publicaciones">
