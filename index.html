@@ -113,7 +113,7 @@ h4.sub{font-size:1.1rem;margin:.4rem 0 .2rem}
 .slide a.btn.alt{background:transparent;color:#fff;border:1.5px solid #fff;margin:0}
 .slide a.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
 .vis{display:flex;justify-content:center;min-width:0}
-.vis img{max-height:270px;width:auto;max-width:100%;border-radius:8px;background:#fff;box-shadow:0 6px 22px rgba(0,0,0,.28)}
+.vis img{max-height:300px;width:auto;max-width:100%;border-radius:8px;background:#fff;box-shadow:0 6px 22px rgba(0,0,0,.28)}
 .vis.logo img{filter:brightness(0) invert(1);max-height:150px;box-shadow:none;background:none}
 @media(max-width:760px){.slide{grid-template-columns:minmax(0,1fr);padding:1.3rem 1.1rem 4.2rem;min-height:0}.vis img{max-height:200px}}
 .car-ctl{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:.5rem;padding:.7rem 1rem;background:rgba(0,0,0,.14)}
@@ -123,6 +123,8 @@ h4.sub{font-size:1.1rem;margin:.4rem 0 .2rem}
 .car-ctl .cb{width:2.4rem;height:2.4rem;border-radius:50%;border:1.5px solid #fff;background:transparent;color:#fff;font:700 1rem var(--sans);cursor:pointer;display:grid;place-items:center}
 .car-ctl .cb:hover,.car-ctl .cb:focus-visible,.dots button:focus-visible{background:#fff;color:var(--green-d);outline:none}
 .access{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.9rem;margin:1.2rem 0 1rem}
+.vis-gif img{width:100%;height:auto;border-radius:8px;display:block}
+@media(prefers-reduced-motion:reduce){}
 .note{font-size:.82rem;color:var(--muted)}
 footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
 </style>
@@ -179,7 +181,7 @@ footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-
         <div><div class="kk">Proyecto</div><h3>Laboratorio de Cosmobiología</h3>
           <p>El cielo es un gran libro abierto a la inteligencia del hombre. El Laboratorio te ayuda a leerlo con cuidado, con ejemplos guiados y tus propios datos.</p>
           <div class="acts"><a class="btn" href="#proyectos-laboratorio">Conocer el laboratorio</a><a class="btn alt" href="https://invesciencias.github.io/Cosmobiologia/laboratorio/index.html" target="_blank" rel="noopener">Abrirlo</a></div></div>
-        <div class="vis logo"><img data-logo alt="" width="150" height="230"></div>
+        <div class="vis"><img src="imagenes/boveda-viva.gif" alt="Animación de la bóveda celeste: un telescopio recorre los puntos del cielo mientras avanza una curva" width="720" height="562"></div>
       </div>
       <div class="slide" role="group" aria-label="4 de 4">
         <div><div class="kk">Únete</div><h3>Forma parte de la comunidad científica de Invesciencias</h3>
@@ -489,7 +491,7 @@ footer{margin-top:2.4rem;padding-top:1rem;border-top:1px solid var(--line);font-
       <p>La plataforma reúne más de 20.000 eventos reales de fuentes abiertas, como sismos, huracanes y tormentas solares, para estudiarlos con calma.</p>
       <p><a class="btn" href="https://invesciencias.github.io/Cosmobiologia/" target="_blank" rel="noopener">Ver la plataforma</a> <a class="btn alt" href="https://github.com/Invesciencias/Cosmobiologia" target="_blank" rel="noopener">Código en GitHub</a></p>
     </div>
-    <div class="imgslot"><b>Imagen sugerida</b>Captura del mapa 3D o del tablero de datos.</div></div>
+    <div class="vis-gif"><img src="imagenes/boveda-viva.gif" alt="Animación de la bóveda celeste" width="720" height="562"></div></div>
     <div class="cards">
       <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/explorador.html#ayuda" target="_blank" rel="noopener"><div class="k">Aprender</div><h4>Entiende el método</h4><p>Principios de la teoría y la estadística que los pone a prueba, con glosario y ejemplos.</p><span class="go">Empezar</span></a>
       <a class="card lk" href="https://invesciencias.github.io/Cosmobiologia/explorador.html#tablero" target="_blank" rel="noopener"><div class="k">Explorar datos</div><h4>Mira qué dicen los datos</h4><p>Tablero y mapa de eventos, con mapa 3D guiado y casos con resultado.</p><span class="go">Explorar</span></a>
